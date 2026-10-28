@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="_0qiP02BFHktMJZrCEh0">
+    <mxGraphModel dx="964" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="投稿アプリ" vertex="1">
+          <mxGeometry height="550" width="226" x="214" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-15" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-2" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-16" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-2" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="訪問者" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="ログイン済みユーザー" vertex="1">
+          <mxGeometry height="60" width="30" x="660" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ユーザー登録をする" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ログインする" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="ログアウトする" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-18" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-7" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="m3HZyWGrKNbsj_2lKamn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="投稿一覧を見る" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="投稿を編集する" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-9" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-1" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-10" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-1" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-20" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-14" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="m3HZyWGrKNbsj_2lKamn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="投稿を削除する" vertex="1">
+          <mxGeometry height="60" width="180" x="230" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-17" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-6" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3HZyWGrKNbsj_2lKamn-19" edge="1" parent="1" source="m3HZyWGrKNbsj_2lKamn-8" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="m3HZyWGrKNbsj_2lKamn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
