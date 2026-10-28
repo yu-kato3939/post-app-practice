@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="_0qiP02BFHktMJZrCEh0">
+    <mxGraphModel dx="1161" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="モバイルオーダーアプリ" vertex="1">
+          <mxGeometry height="580" width="280" x="300" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="メニューの閲覧" vertex="1">
+          <mxGeometry height="80" width="230" x="325" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="商品の注文" vertex="1">
+          <mxGeometry height="80" width="230" x="325" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="注文状況の確認" vertex="1">
+          <mxGeometry height="80" width="230" x="325" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="注文の取り消し" vertex="1">
+          <mxGeometry height="80" width="230" x="325" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="商品の受け渡し" vertex="1">
+          <mxGeometry height="80" width="230" x="325" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-10" edge="1" parent="1" source="c8UElVuUYk6mlLhDTOj8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;defaultLabelBackgroundColor=page;" target="c8UElVuUYk6mlLhDTOj8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-11" edge="1" parent="1" source="c8UElVuUYk6mlLhDTOj8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="c8UElVuUYk6mlLhDTOj8-3">
+          <mxGeometry relative="1" x="-0.0588" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-12" edge="1" parent="1" source="c8UElVuUYk6mlLhDTOj8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="c8UElVuUYk6mlLhDTOj8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-13" edge="1" parent="1" source="c8UElVuUYk6mlLhDTOj8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="c8UElVuUYk6mlLhDTOj8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="お客様" vertex="1">
+          <mxGeometry height="60" width="30" x="90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-15" edge="1" parent="1" source="c8UElVuUYk6mlLhDTOj8-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="c8UElVuUYk6mlLhDTOj8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8UElVuUYk6mlLhDTOj8-8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="店員" vertex="1">
+          <mxGeometry height="60" width="30" x="720" y="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
