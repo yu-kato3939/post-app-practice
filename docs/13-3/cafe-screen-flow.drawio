@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="_0qiP02BFHktMJZrCEh0">
+    <mxGraphModel dx="838" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-78" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-67" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-79" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-78" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="支払い完了" vertex="1">
+          <mxGeometry relative="1" x="0.0166" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="支払い画面" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-76" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-68" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-77" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="支払い" vertex="1">
+          <mxGeometry relative="1" x="0.4242" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="カート画面" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-74" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-69" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-75" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="カートに入れる" vertex="1">
+          <mxGeometry relative="1" x="0.1022" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-82" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-69" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-83" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="注文状況のチェック" vertex="1">
+          <mxGeometry relative="1" x="0.0156" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="メニュー画面" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-80" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-70" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-81" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="注文状況のチェック" vertex="1">
+          <mxGeometry relative="1" x="0.0203" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文完了画面" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-88" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-71" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-90" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-88" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="商品を選ぶ" vertex="1">
+          <mxGeometry relative="1" x="-0.0194" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文一覧画面" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文状況確認画面" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文詳細画面" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-84" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-72" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.991;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="qVp4_J6_T4k3Mb6psGI8-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="227.7" />
+              <mxPoint x="530" y="227.7" />
+              <mxPoint x="530" y="203.2" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-86" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-84" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="取り消し" vertex="1">
+          <mxGeometry relative="1" x="-0.0656" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-89" edge="1" parent="1" source="qVp4_J6_T4k3Mb6psGI8-73" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="262.88" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qVp4_J6_T4k3Mb6psGI8-91" connectable="0" parent="qVp4_J6_T4k3Mb6psGI8-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;" value="渡した後" vertex="1">
+          <mxGeometry relative="1" x="0.0015" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
