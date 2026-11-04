@@ -1,0 +1,38 @@
+##　テーブル定義書
+
+products(商品)
+
+| カラム名      | データ型             | 制約                       | 説明                                    |
+| :------------ | :------------------- | :------------------------- | :-------------------------------------- |
+| id            | BIGINT               | PRIMARY KEY,AUTO_INCREMENT | 商品を１件ずつ区別する番号              |
+| name          | VARCHER(50)          | NOT NULL                   | 商品の名前                              |
+| price         | INT                  | NOT NULL                   | 値段                                    |
+| description   | VARCHER(100)         | -                          | 短い説明                                |
+| category      | ENUM('drink','food') | NOT NULL                   | ドリンクかフードか                      |
+| is_availiable | BOOLEAN              | NOT NULL,DEFAULT true      | その日に売れかどうか。売り切れたらfalse |
+| create_at     | TIMESTAMP            | -                          | 登録した日時                            |
+| update_at     | TIMESTAMP            | -                          | 最後に書き換えた日時                    |
+
+orders(注文)
+
+| カラム名     | データ型    | 制約                       | 説明                            |
+| :----------- | :---------- | :------------------------- | :------------------------------ |
+| id           | BIGINT      | PRIMARY KEY,AUTO_INCREMENT | 注文を１件ずつ区別する          |
+| order_number | VARCHAR(6)  | NOT NULL,UNIQUE            | お客様にお伝えする6桁の注文番号 |
+| total_amount | INT         | NOT NULL                   | 合計金額                        |
+| status       | VARCHAR(20) | NOT NULL                   | 受け取りの状態                  |
+| orderd_at    | DATETIME    | NOT NULL                   | 注文を受けた日時                |
+| created_at   | TIMESTASMP  | -                          | 登録した日時                    |
+| updated_at   | TIMESTSMP   | -                          | 最後に書き換えた日時            |
+
+order_items(注文詳細)
+
+| カラム名   | データ型  | 制約                       | 説明                              |
+| :--------- | :-------- | :------------------------- | :-------------------------------- |
+| id         | BIGINT    | PRIMARY KEY,AUTO_INCREMENT | 注文詳細を１件ずつ区別する番号    |
+| order_id   | BIGINT    | NOT NULL,FOREIGN KEY       | どの注文の明細か                  |
+| product_id | BIGINT    | NOT NULL,FOREIGN KEY       | どの商品か                        |
+| quantitiy  | INT       | NOT NULL                   | 個数                              |
+| unit_price | INT       | NOT NULL                   | 注文時た時のその商品の1つ分の値段 |
+| created_at | TIMESTAMP | -                          | 登録した日時                      |
+| updated_at | TIMESTSMP | -                          | 最後の書き換えた日時              |
