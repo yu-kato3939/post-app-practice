@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="G-pYfFQQi1oARGeITXO9">
+    <mxGraphModel dx="807" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-21" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-24" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="承認" vertex="1">
+          <mxGeometry relative="1" x="-0.1331" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-22" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-25" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="差し戻す" vertex="1">
+          <mxGeometry relative="1" x="-0.1697" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="申請詳細画面" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-12" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="305.0201342281879" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-15" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="提出" vertex="1">
+          <mxGeometry relative="1" x="-0.0996" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-13" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-16" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="作成をやめる" vertex="1">
+          <mxGeometry relative="1" x="-0.0458" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="申請書作成画面" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-18" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-19" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="自分の申請書を作成する" vertex="1">
+          <mxGeometry relative="1" x="0.0006" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-20" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-23" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="申請書を選択" vertex="1">
+          <mxGeometry relative="1" x="0.1583" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="承認待ち画面" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-10" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-14" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="申請書を作成" vertex="1">
+          <mxGeometry relative="1" x="-0.0011" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-11" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-17" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="差し戻された申請書を書き直す" vertex="1">
+          <mxGeometry relative="1" x="-0.0058" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="申請書一覧画面" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-6" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-8" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="申請者としてログイン" vertex="1">
+          <mxGeometry relative="1" x="0.0817" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-7" edge="1" parent="1" source="EClXj5M-yVRbDsVZMrb3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="EClXj5M-yVRbDsVZMrb3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-9" connectable="0" parent="EClXj5M-yVRbDsVZMrb3-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="承認者としてログイン" vertex="1">
+          <mxGeometry relative="1" x="0.0566" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EClXj5M-yVRbDsVZMrb3-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ログイン画面" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

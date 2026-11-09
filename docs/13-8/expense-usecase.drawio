@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="G-pYfFQQi1oARGeITXO9">
+    <mxGraphModel dx="745" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="社内経費精算アプリ" vertex="1">
+          <mxGeometry height="650" width="400" x="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="申請書を提出する" vertex="1">
+          <mxGeometry height="80" width="380" x="190" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="申請状況を確認する" vertex="1">
+          <mxGeometry height="80" width="380" x="190" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="申請を承認する" vertex="1">
+          <mxGeometry height="80" width="380" x="190" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="申請書を差し戻す" vertex="1">
+          <mxGeometry height="80" width="380" x="190" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="差し戻された申請書を書き直す" vertex="1">
+          <mxGeometry height="80" width="380" x="190" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="承認者" vertex="1">
+          <mxGeometry height="60" width="30" x="700" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-14" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-9" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-15" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-9" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-16" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-9" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-9" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="申請者" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-17" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-2" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-18" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-4" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-19" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-5" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-20" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-6" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0VhsTXEvcN6tans-Xzfy-21" edge="1" parent="1" source="0VhsTXEvcN6tans-Xzfy-7" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;endArrow=none;endFill=0;" target="0VhsTXEvcN6tans-Xzfy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
