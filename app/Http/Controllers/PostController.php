@@ -28,10 +28,20 @@ class PostController extends Controller
     {
         $this->authorize('update', $post);
 
+        // ブラウザは改行を CRLF（2 文字）で送る。画面の文字数と合わせるため LF（1 文字）にそろえる
+        if (is_string($request->input('content'))) {
+            $request->merge([
+                'content' => str_replace("\r\n", "\n", $request->input('content')),
+            ]);
+        }
+
         $validated = $request->validate([
             'title' => 'required|string|max:255',
-            'content' => 'required|string',
+            'content' => 'required|string|max:140',
             'category_id' => 'required|exists:categories,id',
+        ], [
+            'content.required' => '本文を入力してください。',
+            'content.max' => '本文は140文字以内で入力してください。',
         ]);
 
         $post->update($validated);
