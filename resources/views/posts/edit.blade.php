@@ -160,6 +160,19 @@
             outline-offset: 2px;
         }
 
+        .counter {
+            color: #5B6570;
+            font-size: 0.8rem;
+            font-variant-numeric: tabular-nums;
+            margin-top: 0.3rem;
+            text-align: right;
+        }
+
+        .counter.over {
+            color: #D6402C;
+            font-weight: 700;
+        }
+
         .error {
             color: #D6402C;
             font-size: 0.83rem;
@@ -205,6 +218,7 @@
                 <div class="form-group">
                     <label for="content">本文</label>
                     <textarea id="content" name="content" required>{{ old('content', $post->content) }}</textarea>
+                    <p class="counter" id="content-counter" aria-live="polite">残り 140 字</p>
                     @error('content')
                         <p class="error">{{ $message }}</p>
                     @enderror
@@ -217,6 +231,25 @@
             </form>
         </main>
     </div>
+
+    <script>
+        (function () {
+            var LIMIT = 140;
+            var textarea = document.getElementById('content');
+            var counter = document.getElementById('content-counter');
+
+            function update() {
+                // 改行は 1 字、絵文字なども 1 字として数える（サーバーの mb_strlen と同じ）
+                var length = Array.from(textarea.value.replace(/\r\n/g, '\n')).length;
+                var left = LIMIT - length;
+                counter.textContent = '残り ' + left + ' 字';
+                counter.classList.toggle('over', left < 0);
+            }
+
+            textarea.addEventListener('input', update);
+            update();
+        })();
+    </script>
 </body>
 
 </html>
