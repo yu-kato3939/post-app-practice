@@ -10,9 +10,21 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::with(['user', 'category'])->latest()->get();
+        // 同時刻のポストが入れ替わらないよう id の降順も使う
+        $posts = Post::with(['user', 'category'])->latest()->latest('id')->get();
+        $categories = Category::orderBy('id')->get();
 
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'categories'));
+    }
+
+    public function store(Request $request)
+    {
+        $validated = $this->validatePost($request);
+
+        // 投稿者はリクエストの値ではなく、ログイン中のユーザーから決める
+        $request->user()->posts()->create($validated);
+
+        return redirect()->route('posts.index');
     }
 
     public function show(Post $post)
@@ -38,23 +50,7 @@ class PostController extends Controller
     {
         $this->authorize('update', $post);
 
-        // ブラウザは改行を CRLF（2 文字）で送る。画面の文字数と合わせるため LF（1 文字）にそろえる
-        if (is_string($request->input('content'))) {
-            $request->merge([
-                'content' => str_replace("\r\n", "\n", $request->input('content')),
-            ]);
-        }
-
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'content' => 'required|string|max:140',
-            'category_id' => 'required|exists:categories,id',
-        ], [
-            'content.required' => '本文を入力してください。',
-            'content.max' => '本文は140文字以内で入力してください。',
-        ]);
-
-        $post->update($validated);
+        $post->update($this->validatePost($request));
 
         return redirect()->route('posts.index');
     }
@@ -66,5 +62,27 @@ class PostController extends Controller
         $post->delete();
 
         return redirect()->route('posts.index');
+    }
+
+    /**
+     * 新規作成と更新で共通の入力チェック。
+     */
+    private function validatePost(Request $request): array
+    {
+        // ブラウザは改行を CRLF（2 文字）で送る。画面の文字数と合わせるため LF（1 文字）にそろえる
+        if (is_string($request->input('content'))) {
+            $request->merge([
+                'content' => str_replace("\r\n", "\n", $request->input('content')),
+            ]);
+        }
+
+        return $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string|max:140',
+            'category_id' => 'required|exists:categories,id',
+        ], [
+            'content.required' => '本文を入力してください。',
+            'content.max' => '本文は140文字以内で入力してください。',
+        ]);
     }
 }

@@ -36,6 +36,19 @@
         .post-actions button:hover { color: #D6402C; text-decoration: underline; text-underline-offset: 3px; }
         .post-actions a:focus-visible, .post-actions button:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; border-radius: 4px; }
         .empty { color: #5B6570; text-align: center; padding: 3.5rem 1rem; }
+        .composer { padding: 0.9rem 1rem 1.1rem; border-bottom: 1px solid #EFF1F4; }
+        .composer .form-group { margin-bottom: 0.8rem; }
+        .composer label { display: block; color: #5B6570; margin-bottom: 0.3rem; font-size: 0.8rem; font-weight: 700; }
+        .composer input[type="text"], .composer textarea, .composer select { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid #D3D9DE; border-radius: 10px; font-size: 0.95rem; font-family: inherit; background: #fff; color: #0F1419; }
+        .composer textarea { min-height: 96px; resize: vertical; line-height: 1.7; }
+        .composer input:focus, .composer textarea:focus, .composer select:focus { outline: none; border-color: #0F1419; box-shadow: 0 0 0 3px rgba(232, 121, 43, 0.18); }
+        .composer-foot { display: flex; justify-content: space-between; align-items: center; gap: 0.8rem; }
+        .counter { color: #5B6570; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+        .counter.over { color: #D6402C; font-weight: 700; }
+        .post-btn { background: #0F1419; color: #fff; border: none; padding: 0.55rem 1.5rem; border-radius: 999px; font-size: 0.9rem; font-weight: 700; cursor: pointer; font-family: inherit; }
+        .post-btn:hover { background: #272C30; }
+        .post-btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
+        .error { color: #D6402C; font-size: 0.83rem; margin-top: 0.3rem; }
     </style>
 </head>
 <body>
@@ -55,6 +68,43 @@
         </header>
 
         <main class="feed">
+            <form class="composer" action="{{ route('posts.store') }}" method="POST">
+                @csrf
+
+                <div class="form-group">
+                    <label for="title">タイトル</label>
+                    <input type="text" id="title" name="title" value="{{ old('title') }}" required>
+                    @error('title')
+                        <p class="error">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="category_id">トピック</label>
+                    <select id="category_id" name="category_id" required>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}" @selected(old('category_id') == $category->id)>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                    @error('category_id')
+                        <p class="error">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="content">本文</label>
+                    <textarea id="content" name="content">{{ old('content') }}</textarea>
+                    @error('content')
+                        <p class="error">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="composer-foot">
+                    <span class="counter" id="content-counter" aria-live="polite">残り 140 字</span>
+                    <button type="submit" class="post-btn">ポストする</button>
+                </div>
+            </form>
+
             @if($posts->isEmpty())
                 <p class="empty">まだポストがありません。</p>
             @else
@@ -120,5 +170,25 @@
             @endif
         </main>
     </div>
+
+    <script>
+        (function () {
+            var LIMIT = 140;
+            var textarea = document.getElementById('content');
+            var counter = document.getElementById('content-counter');
+
+            function update() {
+                // 改行は 1 字、絵文字なども 1 字として数える（サーバーの mb_strlen と同じ）。
+                // サーバーは前後の空白・改行を取り除いてから判定するので、ここでも trim する
+                var length = Array.from(textarea.value.replace(/\r\n/g, '\n').trim()).length;
+                var left = LIMIT - length;
+                counter.textContent = '残り ' + left + ' 字';
+                counter.classList.toggle('over', left < 0);
+            }
+
+            textarea.addEventListener('input', update);
+            update();
+        })();
+    </script>
 </body>
 </html>
