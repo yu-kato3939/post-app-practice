@@ -28,11 +28,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## アーキテクチャ
 
 - **認証は Laravel Fortify**。ログイン・登録・ログアウトのルートは Fortify が登録するので `routes/web.php` には無い。ビューの紐づけは `app/Providers/FortifyServiceProvider.php`（`auth.login` / `auth.register`）、登録処理は `app/Actions/Fortify/CreateNewUser.php`。ログイン後の遷移先は `config/fortify.php` の `home`（`/posts`）。
-- **投稿機能**は `PostController`（index / edit / update / destroy）だけ。新規作成・詳細表示のルートはまだ無い。ルートはすべて `auth` ミドルウェアのグループ内。
+- **投稿機能**は `PostController`（index / store / show / edit / update / destroy）、**リプライ**は `ReplyController`（store / destroy）。ルートはすべて `auth` ミドルウェアのグループ内。
 - **認可は `PostPolicy`**（`update` / `delete` とも「投稿者本人のみ」）。`AuthServiceProvider::$policies` は空で、Policy はモデル名からの自動検出に頼っている。コントローラ側で `$this->authorize()` を呼び、他人の投稿は 403。ビュー側でも編集・削除ボタンを本人にだけ出している。
 - **データ**: `users` 1—* `posts` *—1 `categories`。`posts.user_id` はユーザー削除でカスケード削除、`category_id` は制約のみ。バリデーションはコントローラ内の `$request->validate()`（FormRequest は未使用）。
 - **ビュー**は `resources/views/` の Blade。共通レイアウトは無く、各ビューが独立した HTML でスタイルをインライン `<style>` に持つ。Vite 用のアセットは実質使っていない。
-- テストは `tests/` にひな形の ExampleTest しかない。
+- テストは `tests/Feature/` に `PostStoreTest` / `PostUpdateTest` / `ReplyTest`（＋ひな形の ExampleTest）がある。
+
+## アプリの前提
+
+依頼文に毎回書かなくてよいよう、変更の前提としてここに置く。挙動を変えたときはこの節も更新する。
+
+### タイムラインの今の動き（`/posts`）
+
+- 今ある動き（一覧・編集・削除）を壊さない。
+
+### メッセージの言語
+
+- 入力チェックのメッセージは日本語。`validate()` の第 2 引数でフィールドごとに日本語を指定する（例: `'content.required' => '本文を入力してください。'`）。新しい入力項目を足したら、そのメッセージも日本語で書く。
+
+## 作業の進め方
+
+- 機能の追加・修正にはテストも書く（置き場は `tests/Feature/`）。
+- 書いたら `./vendor/bin/sail test` で全テストを回し、落ちたら通るまで直す。
+- 最後に結果を報告する。何件通ったか、直した箇所、回していないテストがあればその理由を書く。失敗が残るなら「通った」と言わずそのまま書く。
+
+## PR の書き方
+
+PR の本文に次の 2 つを必ず書く。
+
+- **テスト結果**: 実行したコマンド（`./vendor/bin/sail test`）と結果（通過・失敗の件数）。
+- **受け入れ条件の突き合わせ**: 依頼にあった受け入れ条件を 1 つずつ挙げ、それぞれを満たす根拠（対応するテスト名、または手で確認した内容）を対応づける。根拠のない条件は「未確認」と明記する。
 
 ## リポジトリ内のフォルダの扱い
 
