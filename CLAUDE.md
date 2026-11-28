@@ -48,8 +48,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 作業の進め方
 
-- 機能の追加・修正にはテストも書く（置き場は `tests/Feature/`）。
-- 書いたら `./vendor/bin/sail test` で全テストを回し、落ちたら通るまで直す。
 - 最後に結果を報告する。何件通ったか、直した箇所、回していないテストがあればその理由を書く。失敗が残るなら「通った」と言わずそのまま書く。
 
 ## PR の書き方
